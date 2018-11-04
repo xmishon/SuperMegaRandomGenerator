@@ -7,7 +7,7 @@ public class SuperMegaRandomGenerator {
     public static String generateCharNumString(int len) {
         SecureRandom rand = new SecureRandom();
         StringBuilder buf = new StringBuilder(len);
-        int num = 0;
+        int num;
         for (int i = 0; i < len; i++){
             num = rand.nextInt(62);
             if(num < 10) {
